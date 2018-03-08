@@ -4,11 +4,11 @@ This small Node.js script without dependencies will log every HTTP request it ge
 It will not log requests coming from the same IP if there are too many in a short time.
 
 ## How to run
-Any version of Node.js after 6.0 should be OK. No dependencies, everythign sues the standard library.
+Any version of Node.js after 6.0 should be OK. No dependencies, just the standard library.
 
 `npm start` or `node index.js`, is the same.
 
-There is no configuration, logs will be saved in the `log` folder and it listens on port __59742__
+There is no configuration nor parameters, logs will be saved in the `log` folder and it listens on port __59742__
 
 ## How to run with Docker
 
