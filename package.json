@@ -1,0 +1,15 @@
+{
+  "name": "ests",
+  "version": "1.0.0",
+  "description": "Embarassingly simple tracking service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "github.com/jacopofar",
+  "license": "MIT",
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
+}
