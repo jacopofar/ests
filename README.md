@@ -18,7 +18,7 @@ For example to listen on port 9999
 ## FAQ
 
 ### Why this?
-For when I want to track something very simple (page visitors, backend events) with the minimum hassle, like this ![img](https://jacopofarina.eu/ests/img_readme)
+For when I want to track something very simple (page visitors, backend/app events) with the minimum hassle
 
 ### Can I configure it?
 Nope
