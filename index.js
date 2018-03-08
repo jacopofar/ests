@@ -46,7 +46,7 @@ const truncate = (str) => {
 const requestHandler = (request, response) => {
   // Host, User-Agent, Referer, Accept-Language
   const ts = new Date().toISOString();
-  const ip = request.headers["X-Real-IP"] || request.connection.remoteAddress;
+  const ip = request.headers["x-real-ip"] || request.connection.remoteAddress;
   if (typeof requestCount[ip] === 'undefined')
     requestCount[ip] = 1;
   else
@@ -60,10 +60,10 @@ const requestHandler = (request, response) => {
     ip,
     ts,
     url: truncate(request.url),
-    host: truncate(request.headers["Host"]),
-    ua: truncate(request.headers["User-Agent"]),
-    ref: truncate(request.headers["Referer"]),
-    lang: truncate(request.headers["Accept-language"]),
+    host: truncate(request.headers["host"]),
+    ua: truncate(request.headers["user-agent"]),
+    ref: truncate(request.headers["referer"]),
+    lang: truncate(request.headers["accept-language"]),
   };
   logLine = JSON.stringify(eventData);
   logStream.write(logLine + "\n");
